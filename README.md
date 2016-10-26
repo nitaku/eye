@@ -40,6 +40,15 @@ This method binds _callback_ (a function) to the event with the specified _event
 #### observer.stop_listening()
 This method unbinds *all* the previously defined bindings. You should call this if you don't want old callbacks to be executed if their corresponding event is still triggered.
 
+### Observable observers
+Since _observable_ and _observer_ are both mixins, you can define a class that exposes both method sets like this:
+```coffeescript
+observable observer class MyObservableObserverClass
+  constructor: () ->
+    @init
+      events: ['my_event_a', 'my_event_b']
+```
+
 ### View class
 ```coffeescript
 class MyView extends View
