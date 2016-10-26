@@ -39,3 +39,10 @@ This method binds _callback_ (a function) to the event with the specified _event
 
 #### observer.stop_listening()
 This method unbinds *all* the previously defined bindings. You should call this if you don't want old callbacks to be executed if their corresponding event is still triggered.
+
+### View class
+```coffeescript
+class MyView extends View
+  constructor: (conf) ->
+    super(conf)
+```
