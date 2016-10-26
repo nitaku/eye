@@ -22,6 +22,9 @@ It is possible to bind more than one callback to the same event by calling _obse
 
 The method returns an identifier for the binding that has just been created. (To Be Done: streamline this behavior and add unbind capabilities).
 
+#### observable.off(_binding_id_) (to be implemented)
+This method removes the binding with the given _binding_id_.
+
 #### observable.trigger(_event_name_)
 This method triggers the _event_name_ event. It is always necessary to call _observable.trigger_ explicitly, i.e., no attempts to automatically trigger events are made by _eye_. (To Be Done: passing parameters - discouraged)
 
