@@ -3,6 +3,8 @@
   var View, setup_init,
     slice = [].slice;
 
+  window.app = {};
+
   setup_init = function(c, init) {
     if (c.prototype.inits == null) {
       c.prototype.inits = [];

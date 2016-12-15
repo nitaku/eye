@@ -1,8 +1,5 @@
-# make a function (or class) global
-# window.global = (f) ->
-#   window[f.name] = f
-  
-#   return f
+# application singleton
+window.app = {}
 
 # set up an array of initializer methods
 # each one of these methods will be called
